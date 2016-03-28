@@ -3,28 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Les Objets HTML</title>
+    <style media="screen">
+      #chat1 {
+        border: 3px solid red;
+      }
+      #chat2 {
+        border: 3px solid blue;
+      }
+      img {
+        width: 400px;
+        display: block;
+        margin: 10px 0;
+      }
+      .zone-survole {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        color: white;
+        line-height: 200px;
+        text-align: center;
+        margin: 20px 0;
+        display: inline-block;
+      }
+
+    </style>
   </head>
   <body>
     <h1>Les Objets HTML</h1>
     <p>
-      Ce tutoriel a pour but de vous initier aux objets HTML et leurs utilisations.
+      Ce tutoriel a pour but de vous initier aux objets HTML et leurs utilisations.<br>
+      Retrouvez l'énoncé sur <a href="http://simplonline.co/dashboard/consignes/86-consignes-reunion/438-initiation-a-l-utilisation-du-dom" target="_blank">simplonline</a>.
     </p>
     <h1>Exercices</h1>
-    <ul>
-      <li>Première élément</li>
-      <li>Deuxième élément</li>
-      <li>Troisième élément</li>
-    </ul>
+    <p>
+      Ma souris survole : <b id="details-survole"></b>
+    </p>
+
+
+    <img src="img/chat1.jpg" alt="Chat 1" id="chat1"/>
+    <img src="img/chat2.jpg" alt="Chat 2" id="chat2"/>
+
     <button type="button" id="btn-click">Cliquez</button>
-    <div class="zone-survole">
-      Zone de survol N°1
+
+    <h2>L'utilisateur a rentré au clavier</h2>
+    <h1 class="keyboard"></h1>
+    <p class="keyboard"><p>
+    <button type="button">Vider la zone de saisie</button>
+    <div>
+      <div class="zone-survole">
+        Zone 1
+      </div>
+      <div class="zone-survole">
+        Zone 2
+      </div>
+      <div class="zone-survole">
+        Zone 3
+      </div>
     </div>
-    <div class="zone-survole">
-      Zone de survol N°2
-    </div>
-    <div class="zone-survole">
-      Zone de survol N°3
-    </div>
+    <p id="double-clic">
+
+    </p>
+
     <script type="text/javascript">
       /** Placez vos scripts ici */
     </script>
